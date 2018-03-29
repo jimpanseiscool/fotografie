@@ -1,37 +1,121 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parrallax</title>
 
-You can use the [editor on GitHub](https://github.com/jimpanseiscool/fotografie/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<style>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.jumbotron{
+	padding: 100px 0px;
+	margin-bottom: 0;
+	text-align: center;
+}
 
-```markdown
-Syntax highlighted code block
+/*parrallax*/
+.parrallax-content{
+	position: relative;
+	overflow: hidden;
+	height: 80vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.parrallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.parrallax:before {
+	content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+}
 
-# Header 1
-## Header 2
-### Header 3
+	.parrallax-content{
+		background-image: url(https://unsplash.it/1600/846?image=577);
+	}
+	.parrallax-content-2{
+		background-image: url(https://unsplash.it/1600/846?image=565);
+	}
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+</style>
+<div class="jumbotron">
+<div class="container-fluid">
+<h1>Pure CSS Fixed Parallax Scroll Effect Demo</h1>
+<div class="css-script-ads" style="margin:30px auto" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* CSSScript Demo Page */
+google_ad_slot = "3025259193";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<p> <a class="btn btn-primary btn-lg">scroll down</a> </p>
+</div>
+</div>
 
-**Bold** and _Italic_ and `Code` text
+<div class="parrallax-content">
+<div class="parrallax"> </div>
+</div>
+<div class="jumbotron">
+<div class="container-fluid">
+<h1>Pure css parrallax</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, pariatur.</p>
+<p> <a class="btn btn-primary btn-lg">down</a> </p>
+</div>
+</div>
 
-[Link](url) and ![Image](src)
-```
+<div class="parrallax-content parrallax-content-2">
+<div class="parrallax"> </div>
+</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<div class="parrallax-content">
+<div class="parrallax"> </div>
+</div>
+<div class="jumbotron">
+<div class="container-fluid">
+<h1>Hack in css</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, suscipit, pariatur. Nihil fugit.</p>
+<p> <a class="btn btn-primary btn-lg">end</a> </p>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-### Jekyll Themes
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jimpanseiscool/fotografie/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</script>
+</body>
+</html>
